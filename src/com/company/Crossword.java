@@ -449,7 +449,7 @@ public class Crossword extends JTable {
         changer.getPanel().setBounds(column * getRowHeight() + 1, row * getRowHeight() + 1, getRowHeight() - 3, getRowHeight() - 3);
         changer.getPanel().setOpaque(true);
         colorChangers.add(changer);
-        layeredPane.add(colorChangers.get(colorChangers.size() - 1).getPanel(), new Integer(++colorCounter));
+        layeredPane.add(colorChangers.get(colorChangers.size() - 1).getPanel(), Integer.valueOf(++colorCounter));
     }
 
     public void deleteBlackColorAt(int row, int column) {
